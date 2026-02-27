@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dikshya KC Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    line-height:1.6;
+}
+
+section{
+    padding:60px 10%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#38bdf8;
+}
+
+/* Header */
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background:#1e293b;
+    padding:15px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:15px;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* Hero */
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    margin-bottom:15px;
+    border:3px solid #38bdf8;
+}
+
+/* Cards */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:8px;
+}
+
+/* Button */
+.btn{
+    display:inline-block;
+    padding:8px 15px;
+    background:#38bdf8;
+    color:#0f172a;
+    text-decoration:none;
+    border-radius:5px;
+    margin:5px;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:15px;
+    background:#1e293b;
+    margin-top:20px;
+}
+
+/* Fix header spacing */
+body{
+    padding-top:70px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h3>Dikshya KC</h3>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <img src="img/me.jpg" alt="Profile">
+    <h2>Dikshya KC</h2>
+    <p> Basic Frontend Developer </p>
+    <p>Kathmandu, Nepal</p>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p style="text-align:center; max-width:600px; margin:auto;">
+        I am a passionate learner and aspiring developer who enjoys building creative digital solutions.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Frontend</h3>
+            <p>HTML, CSS</p>
+        </div>
+        <div class="card">
+            <h3>Programming</h3>
+            <p>C++, Problem Solving</p>
+        </div>
+        <div class="card">
+            <h3>Tools</h3>
+            <p>VS Code, GitHub, MS Office</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Student Result System</h3>
+            <p>C++ program to calculate total marks and percentage.</p>
+        </div>
+        <div class="project"><div class="card">
+            <h3>Task manager App</h3>
+            <p>A productivity tool designed with a mobile-first approach and interactive UI elements</p>
+        </div></div>
+
+        <div class="project"><div class="card">
+            <h3>Blog Website</h3>
+            <p>Responsive blog layout using HTML & CSS with modern UI.</p>
+        </div></div>
+    </div> 
+
+<section id="contact" style="text-align:center;">
+    <h2>Contact Me</h2>
+    <a href="mailto:kshetridikshya9@email.com" class="btn">Send Email</a>
+    <a href="https://wa.me/977-9767282645" class="btn">WhatsApp</a>
+</section>
+
+</body>
+</html>
